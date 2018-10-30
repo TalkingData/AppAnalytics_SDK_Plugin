@@ -1,0 +1,48 @@
+<idea-plugin>
+  <id>com.talkingdata.appanalytics.plugin</id>
+  <name>TalkingDataAppAnalytics代码示例</name>
+  <version>1.0</version>
+  <vendor email="sdkplatform@tendcloud.com" url="https://www.talkingdata.com">TalkingData</vendor>
+
+  <description>
+    <!--&lt;p&gt;&lt;img src="https://jira.tendcloud.com/secure/attachment/29357/WX20180907-171154%402x.png"/&gt;&lt;/p&gt;-->
+    &lt;a href="http://doc.talkingdata.com/posts/21"&gt;集成文档&lt;/a&gt;
+  </description>
+
+  <change-notes>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <group id="TalkingDataAppAnalytics" text="TalkingDataAppAnalytics" popup="true" icon="/icons/talkingdata.png">
+      <!--<add-to-group group-id="MainMenu" anchor="last"/>-->
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <action class="com.talkingdata.appanalytics.plugin.actions.TalkingDataInit" id="TalkingDataInit" text="TalkingData初始化"/>
+      <action id="TalkingDataEvent" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataEvent" text="TalkingData自定义事件"/>
+      <action id="TalkingDataPage" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataPage" text="TalkingData页面"/>
+      <action id="TalkingDataLogin" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataLogin" text="TalkingData登录"/>
+      <action id="TalkingDataReg" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataReg" text="TalkingData注册"/>
+      <action id="TalkingDataPlaceOrder" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataPlaceOrder" text="TalkingData订单"/>
+      <action id="TalkingDataOrderPaySucc" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataOrderPaySucc" text="TalkingData订单支付成功"/>
+      <action id="TalkingDataAddItem" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataAddItem" text="TalkingData添加物品到购物车"/>
+      <action id="TalkingDataViewItem" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataViewItem" text="TalkingData查看物品"/>
+      <action id="TalkingDataViewShoppingCart" class="com.talkingdata.appanalytics.plugin.actions.TalkingDataViewShoppingCart" text="TalkingData查看购物车"/>
+    </group>
+
+
+  </actions>
+
+</idea-plugin>
