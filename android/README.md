@@ -28,9 +28,23 @@
 <span id="usage"></span>
 ## Usage &  使用
 
+### 手动
+
 在java文件中右键，选择对应功能即可插入示例代码
 
 <img src='./img/use.png'></img>
+
+### 快捷键
+
+可以通过设置快捷键的方式，为每一个动作设定自己喜欢的快捷键，设置好之后，可以直接使用快捷键的方式使用插件。设置快键键的方式如下：
+
+在Android Studio的设置中选择Keymap，然后在搜索栏中键入TalkingData，将会搜索到和本插件相关的所有指令；
+
+![](./img/keymap.png)
+
+为指令设置快捷键（快捷键的设置需要避免重复）；
+
+![](./img/setkeymap.png)
 
 ---
 
