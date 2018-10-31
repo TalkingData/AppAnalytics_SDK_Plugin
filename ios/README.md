@@ -12,7 +12,7 @@
 
 手动选择的方式使用是指每次需要进行某个业务代码插入的时候，在Xcode的菜单栏中进行手动选择，如下图：
 
-![](resource/demo1.png)
+![](demo1.png)
 
 ## 使用方法二：通过设置快捷键使用
 
@@ -20,10 +20,10 @@
 
 1. 在Xcode的Preferences中选择Key Bindings，然后在搜索栏中键入TalkingData或者AppAnalytics，将会搜索到和本插件相关的所有指令；
 
-![](resource/demo2.png)
+![](demo2.png)
 
 2. 为指令设置快捷键（快捷键的设置需要避免重复）；
 
-![](resource/demo3.png)
+![](demo3.png)
 
 3. 设置好快捷键后，就可以直接使用快捷键进行指令调用了。
