@@ -13,6 +13,11 @@ talkingdata-app-plugin 是一款基于TalkingData SDK的示例代码生成插件
 
 ---
 
+## 版本支持
+
+⚠️ 支持 `Android Studio 3.0+` `JDK 1.8`
+
+⚠️ 支持 `Xcode 8+` `macOS 10.11+`
 
 <span id="install"></span>
 ## INSTALL & 安装
