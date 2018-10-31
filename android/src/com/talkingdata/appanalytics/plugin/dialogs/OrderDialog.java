@@ -28,14 +28,15 @@ public class OrderDialog extends JDialog {
         this.orderDialogCallback = orderDialogCallback;
         this.isPay = isPay;
 
+        int dpi = Toolkit.getDefaultToolkit().getScreenResolution();
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
-        int Swing1x = 750;
-        int Swing1y = 500;
+        int Swing1x = (int) (7.5 * dpi);
+        int Swing1y = 5 * dpi;
 
         setTitle("TalkingData");
         setSize(Swing1x, Swing1y);
 
-        setBounds((screensize.width - Swing1x) / 2, (screensize.height - Swing1y) / 2 - 100, Swing1x, Swing1y);
+        setBounds((screensize.width - Swing1x) / 2, (screensize.height - Swing1y) / 2 - dpi, Swing1x, Swing1y);
 
         if (!isPay){
             pay_label.setVisible(false);
@@ -48,6 +49,7 @@ public class OrderDialog extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         setComboBox();
+        table.setRowHeight((int) (0.3 * dpi));
         setTable();
         total_spinner.setValue(899800);
 
@@ -81,7 +83,7 @@ public class OrderDialog extends JDialog {
 
     private void setTable(){
         Object[][] rows = new Object[][]{};
-        Object[] columns = new Object[]{"商品ID","商品所属类型","商品名称","商品单价（货币单位为分）","商品购买数量"};
+        Object[] columns = new Object[]{"商品ID","商品所属类型","商品名称","商品单价","商品购买数量"};
 
 
         DefaultTableModel tableModel = new DefaultTableModel(rows, columns){

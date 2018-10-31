@@ -14,14 +14,15 @@ public class InitDialog extends JDialog {
 
     public InitDialog(InitDialogCallback dialogCallback) {
         this.dialogCallback = dialogCallback;
+        int dpi = Toolkit.getDefaultToolkit().getScreenResolution();
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
-        int Swing1x = 720;
-        int Swing1y = 200;
+        int Swing1x = (int) (7.2 * dpi);
+        int Swing1y = 2 * dpi;
 
         setTitle("TalkingData");
         setSize(Swing1x, Swing1y);
 
-        setBounds((screensize.width - Swing1x) / 2, (screensize.height - Swing1y) / 2 - 100, Swing1x, Swing1y);
+        setBounds((screensize.width - Swing1x) / 2, (screensize.height - Swing1y) / 2 - dpi, Swing1x, Swing1y);
 
         setContentPane(contentPane);
         setModal(true);

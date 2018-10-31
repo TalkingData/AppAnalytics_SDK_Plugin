@@ -19,14 +19,15 @@ public class ItemDialog extends JDialog {
     public ItemDialog(boolean isAdd, ItemDialogCallback itemDialogCallback) {
         this.itemDialogCallback = itemDialogCallback;
 
+        int dpi = Toolkit.getDefaultToolkit().getScreenResolution();
         Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
-        int Swing1x = 500;
-        int Swing1y = 260;
+        int Swing1x = 5 * dpi;
+        int Swing1y = (int) (2.6 * dpi);
 
         setTitle("TalkingData");
         setSize(Swing1x, Swing1y);
 
-        setBounds((screensize.width - Swing1x) / 2, (screensize.height - Swing1y) / 2 - 100, Swing1x, Swing1y);
+        setBounds((screensize.width - Swing1x) / 2, (screensize.height - Swing1y) / 2 - dpi, Swing1x, Swing1y);
 
         setContentPane(contentPane);
         setModal(true);
