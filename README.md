@@ -1,4 +1,4 @@
-# TalkingData-SDK-plugin for Android Studio&Xcode
+# TalkingData-SDK-plugin for IDE(Android Studio & Xcode)
 
 ## 介绍
 TalkingData-SDK-plugin 是一款基于TalkingData AppAnalytics SDK的示例代码生成插件，专注于为开发者提效，使集成TalkingData SDK变得简单高效。
